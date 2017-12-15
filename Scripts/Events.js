@@ -178,7 +178,7 @@ function OpenPrivateChatWindow(chatHub, id, userName)
         return;
     }
 
-    CreatePrivateChatWindow(chatHub, id, ctr, userName);
+    CreatePrivateChatWindow(chatHub, id, ctrId, userName);
 }
 
 function CreatePrivateChatWindow(chatHub, userId, ctrId, userName)

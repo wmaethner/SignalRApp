@@ -17,11 +17,12 @@
 
 	<script src="Scripts/jquery.signalR-2.1.2.js"></script>
 	<script src="/signalr/hubs"></script>
+    <!--<script src="Scripts/Events.js"></script>-->
 
+    
 	<script type="text/javascript">
 		$(function ()
 		{
-			alert("starting");
 			setScreen(false);
 
 			//Declare a proxy to reference the hub.
@@ -200,7 +201,7 @@
 				return;
 			}
 
-			CreatePrivateChatWindow(chatHub, id, ctr, userName);
+			CreatePrivateChatWindow(chatHub, id, ctrId, userName);
 		}
 
 		function CreatePrivateChatWindow(chatHub, userId, ctrId, userName)
@@ -266,11 +267,12 @@
 			});
 		}
 	</script>
+    
 </head>
 
 <body>
 	<div id="header">
-		Will M Signal R Chat
+		Will M Chat Room
 	</div>
 	<br />
 	<br />
